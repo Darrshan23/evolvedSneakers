@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "./Header";
 
 const App = () => {
   return (
-    <>
-      <Header />
-    </>
+    <section id='section'>
+      <h1 className='class'>Hi</h1>
+    </section>
   );
 }
 

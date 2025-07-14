@@ -1,11 +1,11 @@
-import React from "react";
+const Button = () => {
+  return <button onClick={()=>console.log('You clicked Me!')}>Click Me</button>
+}
 
 const App = () => {
   return (
-    <section id='section'>
-      <h1 className='class'>Hi</h1>
-    </section>
-  );
+    <Button />
+  )
 }
 
-export default App;
+export default App

@@ -1,29 +1,26 @@
 import { useState } from "react"
 
 const App = () => {
-
-  const [movie, setMovie] = useState({
-    title: "Bigil",
-    ratings: "8"
-  })
-
-  const clickHandler = () => {
-    const copyMovie = {
-      ...movie,
-      ratings: 5
-    }
-
-    setMovie(copyMovie)
+  
+  const [name, setName] = useState(["Darr", "King"]);
+  const updatePerson = () => {
+    setName(name.map(n=>(
+      n=== "Darr" ? "Darrrr" : n
+    )))
   }
 
-
-  return ( 
+  return(
     <div>
-      <h1>Title: {movie.title}</h1>
-      <p>Ratings: {movie.ratings}</p>
-      <button onClick={clickHandler}>Update rating</button>
+      <h1>
+        <ul>
+          {name.map(n=>(
+            <li key={Math.random()}>{n}</li>
+          ))}
+        </ul>
+        <button onClick={updatePerson}>Update Darr</button>
+      </h1>
     </div>
-  )
+  );
 }
 
-export default App 2:01:56
+export default App

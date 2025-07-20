@@ -1,6 +1,4 @@
-import React from 'react';
-
-const ComponentTwo = () => {
+const ComponentTwo = ({ count, onClickHandler }) => {
   const handleClick = () => onClickHandler();
   return (
     <div>

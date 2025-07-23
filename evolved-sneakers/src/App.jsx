@@ -1,14 +1,13 @@
-import { useState } from 'react';
-import ExampleOne from './components/ExampleOne';
-import ExampleTwo from './components/ExampleTwo';
-import ExampleThree from './components/ExampleThree';
+import Counter from './components/Counter';
+import Profile from './components/Profile';
+import Todolist from './components/Todolist';
 
 const App = () => {
   return (
     <div>
-      <ExampleOne />
-      <ExampleTwo />
-      <ExampleThree />
+      <Counter />
+      <Todolist />
+      <Profile />
     </div>
   );
 };
